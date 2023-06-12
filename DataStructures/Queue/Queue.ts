@@ -13,13 +13,6 @@ class Queue<T> {
         this.length = 0;
     }
 
-    log(): void {
-        let node = this.head;
-        while (node) {
-            console.log(node.value);
-            node = node.next;
-        }
-    }
     enqueue(item: T): void {
         const node = { value: item } as QNode<T>
         this.length++;
