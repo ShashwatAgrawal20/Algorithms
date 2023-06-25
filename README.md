@@ -18,7 +18,8 @@ The most used notation in the analysis of a code is the Big O Notation which giv
 
 ## Internal Links
 - [Searching](./Searching/README.md)
-- [Sorting](./Sorting/BubbleSort.md)
+- [Sorting](./Sorting/README.md)
 - [LinkedList](./DataStructures/LinkedList/README.md)
 - [Queue](./DataStructures/Queue/README.md)
 - [Stack](./DataStructures/Stack/README.md)
+- [Recursion](./Recursion/README.md)
