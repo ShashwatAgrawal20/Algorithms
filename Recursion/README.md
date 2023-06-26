@@ -13,7 +13,6 @@ Recursion is an amazing technique with the help of which we can reduce the lengt
 - In every step, we try smaller inputs to make the problem smaller.
 - Base condition is needed to stop the recursion otherwise infinite loop will occur.
 
-
 Let us consider a problem that a programmer has to determine the sum of first n natural numbers, there are several ways of doing that but the simplest approach is simply to add the numbers starting from 1 to n. So the function simply looks like this,
 > approach(1) – Simply adding one by one
 > f(n) = 1 + 2 + 3 +……..+ n
@@ -21,6 +20,7 @@ Let us consider a problem that a programmer has to determine the sum of first n 
 >approach(2) – Recursive adding
 > f(n) = 1             n=1
 > f(n) = n + f(n-1)    n>1
+
 ```typescript
 function sumRec(n: number): number {
     if (n === 0) {
@@ -29,3 +29,5 @@ function sumRec(n: number): number {
     return n + sumRec(n - 1);
 }
 ```
+
+- [Maze Solver using recursion](./MazeSolver.ts)

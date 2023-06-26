@@ -1,8 +1,3 @@
-declare type Point = {
-    x: number,
-    y: number
-}
-
 const dir = [
     [-1, 0],
     [1, 0],
@@ -43,7 +38,7 @@ function walk(maze: string[], wall: string, curr: Point, end: Point, seen: boole
 }
 
 
-function solve(maze: string[], wall: string, start: Point, end: Point): Point[] {
+export default function solve(maze: string[], wall: string, start: Point, end: Point): Point[] {
     const seen: boolean[][] = [];
     const path: Point[] = [];
 
@@ -54,43 +49,4 @@ function solve(maze: string[], wall: string, start: Point, end: Point): Point[] 
     walk(maze, wall, start, end, seen, path);
     return path;
 
-}
-const maze = [
-    "xxxxxxxxxx x",
-    "x        x x",
-    "x        x x",
-    "x xxxxxxxx x",
-    "x          x",
-    "x xxxxxxxxxx",
-];
-
-const mazeResult = [
-    { x: 10, y: 0 },
-    { x: 10, y: 1 },
-    { x: 10, y: 2 },
-    { x: 10, y: 3 },
-    { x: 10, y: 4 },
-    { x: 9, y: 4 },
-    { x: 8, y: 4 },
-    { x: 7, y: 4 },
-    { x: 6, y: 4 },
-    { x: 5, y: 4 },
-    { x: 4, y: 4 },
-    { x: 3, y: 4 },
-    { x: 2, y: 4 },
-    { x: 1, y: 4 },
-    { x: 1, y: 5 },
-];
-
-const mazeResSim = mazeResult.map((p) => JSON.stringify(p)).join(",");
-const result = solve(maze, "x", { x: 10, y: 0 }, { x: 1, y: 5 });
-const resSim = result.map((p) => JSON.stringify(p)).join(",");
-console.log(`expected ${mazeResSim}`)
-console.log(`actual ${resSim}`)
-
-if (resSim === mazeResSim) {
-    console.log("pass");
-}
-else {
-    console.log("fail");
 }

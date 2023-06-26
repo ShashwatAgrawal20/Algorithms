@@ -3,7 +3,7 @@ type QNode<T> = {
     prev?: QNode<T>
 };
 
-class Stack<T> {
+export default class Stack<T> {
     public length: number;
     private head?: QNode<T>;
 
@@ -39,26 +39,3 @@ class Stack<T> {
         return this.head?.value;
     }
 }
-
-const list = new Stack<number>();
-
-list.push(5);
-list.push(7);
-list.push(9);
-
-console.log("Current", list);
-console.log("length", list.length);
-console.log("pop", list.pop());
-console.log("length", list.length);
-console.log("push 11"); list.push(11);
-console.log("pop", list.pop());
-console.log("pop", list.pop());
-console.log("peek", list.peek());
-console.log("length", list.length);
-console.log("push 69"); list.push(69);
-console.log("peek", list.peek());
-console.log("length", list.length);
-console.log("pop", list.pop());
-console.log("pop", list.pop());
-console.log("length", list.length);
-console.log("pop", list.pop());

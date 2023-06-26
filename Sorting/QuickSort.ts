@@ -25,18 +25,6 @@ function partition(arr: number[], lo: number, hi: number): number {
     return idx;
 }
 
-function quick_sort(arr: number[]): void {
+export default function quick_sort(arr: number[]): void {
     qsr(arr, 0, arr.length - 1);
-}
-
-
-const arr: number[] = [8, 2, 7, 4, 69, 420, 96];
-const expected: number[] = [2, 4, 7, 8, 69, 96, 420];
-
-quick_sort(arr);
-if(arr.every((value, idx) => value === expected[idx])){
-    console.log("test passed");
-}
-else{
-    console.log("test failed");
 }

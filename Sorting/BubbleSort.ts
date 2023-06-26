@@ -1,4 +1,4 @@
-function bubsort(arr: number[]): void {
+export default function bubsort(arr: number[]): void {
     for (let i = 0; i < arr.length; ++i) {
         for (let j = 0; j < arr.length - i - 1; ++j) {
             if (arr[j] > arr[j + 1]) {
@@ -9,7 +9,3 @@ function bubsort(arr: number[]): void {
         }
     }
 }
-const arr = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
-console.log("unsorted array: ", arr);
-bubsort(arr);
-console.log("\nsorted array: ", arr);

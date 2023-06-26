@@ -3,7 +3,7 @@ type QNode<T> = {
     next?: QNode<T>
 }
 
-class Queue<T> {
+export default class Queue<T> {
     public length: number;
     private head?: QNode<T>;
     private tail?: QNode<T>;
@@ -30,6 +30,9 @@ class Queue<T> {
         this.length--;
         const head = this.head;
         this.head = this.head.next;
+        if (!this.head) {
+            this.tail = undefined;
+        }
         head.next = undefined;
         return head.value;
     }
@@ -37,16 +40,3 @@ class Queue<T> {
         return this.head?.value;
     }
 }
-
-const list = new Queue<number>();
-list.enqueue(5);
-list.enqueue(7);
-list.enqueue(9);
-console.log("Current", list);
-console.log("length", list.length);
-console.log("deque", list.deque());
-console.log("length", list.length);
-console.log("deque", list.deque());
-console.log("peek", list.peek());
-console.log("deque", list.deque());
-console.log("length", list.length);
