@@ -6,6 +6,9 @@ DSA is defined as a combination of two separate yet interrelated topics – Data
 ## What is Data Structure?
 A data structure is defined as a particular way of storing and organizing data in our devices to use the data efficiently and effectively. The main idea behind using data structures is to minimize the time and space complexities. An efficient data structure takes minimum memory space and requires minimum time to execute the data.
 
+## Classification of Data Structuure
+![Classification](./Images/Classification.png)
+
 ## What is Algorithm?
 Algorithm is defined as a process or set of well-defined instructions that are typically used to solve a particular group of problems or perform a specific type of calculation. To explain in simpler terms, it is a set of operations performed in a step-by-step manner to execute a task.
 
@@ -21,10 +24,11 @@ This repository contains implementations and examples of various data structures
 
 - [Searching](./Searching/README.md)
 - [Sorting](./Sorting/README.md)
+- [Recursion](./Recursion/README.md)
 - [LinkedList](./DataStructures/LinkedList/README.md)
 - [Queue](./DataStructures/Queue/README.md)
 - [Stack](./DataStructures/Stack/README.md)
-- [Recursion](./Recursion/README.md)
+- [Tree](./DataStructures/Tree/README.md)
 
 ## Usage
 1. **Clone the Repository**: Start by cloning this repository to your local machine. Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then, run the following command:

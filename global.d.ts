@@ -12,3 +12,9 @@ interface LinkedList<T> {
     prepend(item: T): void;
     get(index: number): T | undefined;
 }
+
+declare type BinaryNode<T> = {
+    value: T;
+    left: BinaryNode<T> | null;
+    right: BinaryNode<T> | null;
+};
