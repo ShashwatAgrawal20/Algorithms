@@ -19,6 +19,9 @@ The data in a tree are not stored in a sequential manner i.e., they are not stor
 - **Ternary Tree:** A Ternary Tree is a tree data structure in which each node has at most three child nodes, usually distinguished as “left”, “mid” and “right”.
 - **N-ary Tree or Generic Tree:** Generic trees are a collection of nodes where each node is a data structure that consists of records and a list of references to its children(duplicate references are not allowed). Unlike the linked list, each node stores the address of multiple nodes.
 
+## Misc
+- [Breadth First Search](./BreadthFirstSearch.md)
+
 ## More Information
 - [Wiki](https://en.wikipedia.org/wiki/Tree_(data_structure))
 - [GFG](https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/)
