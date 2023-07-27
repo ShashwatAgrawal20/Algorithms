@@ -30,6 +30,7 @@ This repository contains implementations and examples of various data structures
 - [Stack](./DataStructures/Stack/README.md)
 - [Tree](./DataStructures/Tree/README.md)
 - [Heap](./DataStructures/Heap/README.md)
+- [Graph](./DataStructures/Graphs/README.md)
 
 ## Usage
 1. **Clone the Repository**: Start by cloning this repository to your local machine. Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then, run the following command:

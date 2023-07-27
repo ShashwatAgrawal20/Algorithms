@@ -18,3 +18,11 @@ declare type BinaryNode<T> = {
     left: BinaryNode<T> | null;
     right: BinaryNode<T> | null;
 };
+
+declare type CompleteGraphEdge = { from: number, to: number, weight: number };
+declare type GraphEdge = { to: number, weight: number };
+declare type WeightedAdjacencyList = GraphEdge[][];
+declare type WeightedAdjacencyMatrix = number[][];
+
+declare type AdjacencyList = number[][];
+declare type AdjacencyMatrix = number[][];
